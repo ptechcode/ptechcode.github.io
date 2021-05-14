@@ -1,1 +1,2 @@
-document.getElementById("hello").innerHTML = "How are you?";
+$(document).ready(function(){
+});

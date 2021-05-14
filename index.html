@@ -3,90 +3,99 @@
 <title>HTML NAV</title>
 <head>
 <link rel="stylesheet" href="assets/stylecss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader&family=Roboto&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body>
-  <div style="background-color:#034f84">      
-    <div class="p-content p-maxwidth">
-      <ul class="topnav">
-        <!-- <li><a href="http://ptechdev.github.io" >main</a></li>
-        <li><a href="http://ptechdev.github.io/about.html" >link</a></li> -->
-        <li><a  class="active"href="index.html">main</a></li>
-        <li><a  href="about.html">about</a></li>
-        <li><a  href="contact.html">contact</a></li>
-       
+  
+  <header class="p-header">      
+    <div class="p-content p-maxwidth">      
+      <ul class="p-topnav">
+        <li><a class="p-active" href="http://ptechdev.github.io">main</a></li>
+        <li><a href="https://github.com/ptechdev/ptechdev.github.io">download</a></li>
+        <li><a href="http://ptechdev.github.io/contact.html">contact</a></li>    
       </ul>
     </div>
-  </div>
 
-  <div style="background-color: #034f84;color:white;padding:50px 0px">
     <div class="p-content p-maxwidth p-pd">
-      <h1>PTECHDEV's Github Site</h1>
+      <h1>PTECHDEV's Github</h1>
+      <h2>How to make a Github website like this?</h2>
     </div>
-  </div>
-
-  
+  </header><!-- close p-header -->
 
 
-  <div class="p-content p-maxwidth">
-  <div style="padding:16px;">
-    <h2>How to make a Github website like this?</h2>
-    <h3>It is a single column, responsive website.</h3>
-    <p>It consists of a header, nav menu, section, article and footer</p>
-<br>
-    <h4>1) The first part is the nav menu.</h4>
-    <code>
-      <div style="background-color:#034f84">      
-        <div class="p-content p-maxwidth">
-          <ul class="topnav">
-            <!-- <li><a href="http://ptechdev.github.io" >main</a></li>
-            <li><a href="http://ptechdev.github.io/about.html" >link</a></li> -->
-            <li><a  class="active"href="index.html">main</a></li>
-            <li><a  href="about.html">about</a></li>
-            <li><a  href="contact.html">contact</a></li>           
-          </ul>
-        </div>
-      </div>
-    </code>
-    <br>
-    <h4>2) The second part is the full-width header.</h4>
-    <div style="background-color: #034f84;color:white;padding:50px 0px">
+  <div class="p-title">
+    <div class="p-content p-maxwidth p-pd">
+      <h3>It is a single column, responsive website.</h3>
+    </div>
+  </div><!-- close p-title -->
+
+  <article class="p-content p-maxwidth p-pd">    
+    <p>It consists of nav menu, header, article/content and footer</p>
+    <section>    
+      <h4>1) The first part is the nav menu and full-width header.</h4>
+      <pre><code>&ltheader class="p-header"&gt      
+  &ltdiv class="p-content p-maxwidth"&gt      
+    &ltul class="p-topnav"&gt
+      &ltli&gt&lta class="p-active" href="http://ptechdev.github.io"&gtmain&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="https://github.com/ptechdev/ptechdev.github.io"&gtdownload&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="http://ptechdev.github.io/contact.html"&gtcontact&lt/a&gt&lt/li&gt    
+    &lt/ul&gt
+  &lt/div&gt
+
+  &ltdiv class="p-content p-maxwidth p-pd"&gt
+    &lth1&gtPTECHDEV's Github&lt/h1&gt
+    &lth2&gtHow to make a Github website like this?&lt/h2&gt
+  &lt/div&gt
+&lt/header&gt&lt!-- close p-header --&gt
+      </code></pre>
+    </section>
+   
+    <section>    
+      <h4>2) The second part is the title.</h4>
+      <pre><code>&ltdiv class="p-title"&gt
+  &ltdiv class="p-content p-maxwidth p-pd"&gt
+    &lth3&gtIt is a single column, responsive website.&lt/h3&gt
+  &lt/div&gt
+&lt/div&gt&lt!-- close p-title --&gt</code></pre>
+
+    </section>
+    <section>    
+      <h4>3) The third part is the article/content.</h4>
+    </section>   
+    <section>    
+      <h4>3) The last part is the footer.</h4>
+      <pre><code>&ltfooter&gt
+&ltdiv class="p-footer"&gt      
+  &ltdiv class="p-content p-maxwidth p-pd"&gt
+    &ltul class="p-bottomnav"&gt
+      &ltli&gt&lta class="p-active" href="http://ptechdev.github.io"&gtmain&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="https://github.com/ptechdev/ptechdev.github.io"&gtdownload&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="http://ptechdev.github.io/contact.html"&gtcontact&lt/a&gt&lt/li&gt    
+        &ltli&gt&lta href=""&gt&copy; PTechDev 2018-2021&lt/a&gt&lt/li&gt          
+      &lt/ul&gt
+    &lt/div&gt
+  &lt/div&gt
+&lt/footer&gt&lt!-- close footer --&gt</code></pre>
+    </section>   
+  </article><!-- close article -->
+
+  <footer>
+    <div class="p-footer">      
       <div class="p-content p-maxwidth p-pd">
-        <h1>PTECHDEV's Github Site</h1>
-      </div>
-    </div>
-    <br>
-    <h4>3) The Third part is the content like this</h4>
-    <br>
-    <h4>4) The last part is the footer.</h4>
-  
-
-
-
-  </div>
-
-
-
-</div>
-<footer>
-  <div style="background-color:#034f84; color:white; padding:20px 16px;">      
-    <div style="background-color:#034f84">      
-      <div class="p-content p-maxwidth">
-        <ul class="topnav bottomnav">
-          <!-- <li><a href="http://ptechdev.github.io" >main</a></li>
-          <li><a href="http://ptechdev.github.io/about.html" >link</a></li> -->
-          <li><a  class="active"href="index.html">main</a></li>
-          <li><a  href="about.html">about</a></li>
-          <li><a  href="contact.html">contact</a></li>           
+        <ul class="p-bottomnav">
+          <li><a class="p-active" href="http://ptechdev.github.io">main</a></li>
+          <li><a href="https://github.com/ptechdev/ptechdev.github.io">download</a></li>
+          <li><a href="http://ptechdev.github.io/contact.html">contact</a></li>    
+          <li><a href="">&copy; PTechDev 2018-2021</a></li>          
         </ul>
       </div>
     </div>
-      </div>
+  </footer><!-- close footer -->
 
-</footer>
-
+<script src="assets/scriptjs.js"></script>
 </body>
 </html>

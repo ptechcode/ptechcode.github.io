@@ -1,49 +1,36 @@
-body {
-  margin: 0;padding:0;font-family: 'Newsreader', serif;
-}
+body { margin:0; padding:0; font-family: 'Newsreader', serif; }
+p,span,a,li { font-family: 'Roboto';}
+* { box-sizing: border-box; }
+
+
 .p-content { margin-left:auto; margin-right:auto;}
 .p-maxwidth { max-width: 1000px;}
-.p-bd { border:1px solid black}
 .p-pd { padding: 16px;}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #034f84;
-  
- overflow: hidden;
-  
-}
+section { padding:16px; margin-bottom:16px; background:#eee}
 
-li { float:right; }
-
-li a {
-  display: block;
-  color: white; 
-  padding: 16px;
-  text-decoration: none;
-  background-color: #444;
-  text-transform: uppercase;
-}
+.p-header { background-position:center;background-image:url(/assets/img/webpic28.png);background-size:cover;color:#333; }
+.p-footer { background-color:#b1cbbb; color:white; }
 
 
-li a.active {
-  background-color: #034f84;
-  color: white;
-}
+.p-topnav , .p-bottomnav  {  list-style-type: none;  margin: 0;  padding: 0; overflow: hidden;  }
+.p-topnav li a, .p-bottomnav  li a{ display: block;  color: white;  text-decoration: none;  text-transform: uppercase;}
+.p-topnav li a:hover:not(.p-active), .p-bottomnav li a:hover:not(.p-active) { background-color: #f7cac9;}
 
-li a:hover:not(.active) {
-  background-color: #444;
-  color: white;
-}
+.p-topnav li { float:right; }
+.p-topnav li a{  padding: 16px;   background-color: #f7786b; font-size:14px}
+@media(max-width:600px){.p-topnav li {width:33.33%}}
+.p-topnav li a.p-active{ background-color: #b1cbbb;}
 
-li11 {
-  border-right: 1px solid #bbb;
-}
+.p-bottomnav li{ float:left}
+.p-bottomnav li:last-child { float:right; }
+.p-bottomnav li a{ padding:5px 10px; background-color:#b1cbbb; font-size:12px;}
+.p-bottomnav li a.p-active{ background-color:#f7786b;}
+.p-bottomnav li:last-child a:hover{ background:none;cursor:default}
 
-li:last-child {
-  border-right: none;
-}
 
-.bottomnav a{ font-size:12px; background-color:#034f84;padding:5px 10px}
-.bottomnav a.active{ font-size:12px; background-color:#333;}
+.p-title { background-color:#b1cbbb;padding:0px 0px;color:white; }
+
+pre { margin:0; padding:0;}
+code { font-family: monospace;font-size: 12px; background:#b1cbbb; color:#333;padding: 16px; display: inline-block; line-height: 1.6; margin:0; width: 100%; overflow-x: scroll; }
+
+
