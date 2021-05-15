@@ -76,7 +76,7 @@ section:not(:last-child) {
  .p-scroll-menu::-webkit-scrollbar-thumb:hover { background: grey; transform:scaleY(1.7)}
 
 .p-bgcolor1{
-  background-color: #6b5b95;
+  background-color: #9CDCFE;
   color: white
 }
 
@@ -137,22 +137,18 @@ section h3, .p-innermenu li:not(:last-child) {
 }
 
 .p-topnav li {
-  float: right;
+  float: right; 
 }
 
 .p-topnav li a {
-  padding: 16px;
-  font-size: 14px
+  padding: 12px 16px; 
+  font-size: 14px; 
 }
 
 @media(max-width: 600px) {
-  .p-topnav li a {
-       text-align:center; padding:12px; 
-  }
-  .p-topnav li {width:33.33%; }
-  
-  .p-topnav li:not(:first-child) {  border-right-width:5px; border-right-style:solid; border-right-color: #d64161  }
-    
+  .p-topnav li a { text-align:center; padding:12px; }
+  .p-topnav li { width:33.33%; }  
+  .p-topnav li:not(:first-child) {  border-right-width:5px; border-right-style:solid; border-right-color: #d64161; }    
 }
 
 .p-bottomnav li {
