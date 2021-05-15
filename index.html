@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html>
 <title>HTML NAV</title>
+
 <head>
-<link rel="stylesheet" href="assets/stylecss.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader&family=Roboto&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="assets/stylecss.css">
+ 
+ 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body>
-  
-  <header class="p-header">      
-    <div class="p-content p-maxwidth">      
+  <nav>
+    <div class="p-content p-maxwidth">
       <ul class="p-topnav">
-        <li><a class="p-active" href="http://ptechdev.github.io">main</a></li>
-        <li><a href="https://github.com/ptechdev/ptechdev.github.io">download</a></li>
-        <li><a href="http://ptechdev.github.io/contact.html">contact</a></li>    
+        <li><a class="p-active p-bgcolor21" href="http://ptechdev.github.io">main</a></li>
+        <li><a class="p-bgcolor21" href="https://github.com/ptechdev/ptechdev.github.io" target="_blank">download</a></li>
+        <li><a class="p-bgcolor21" href="http://ptechdev.github.io/contact.html">contact</a></li>
+        
       </ul>
     </div>
+  </nav>
+ 
+  <header class="p-header">
+    
 
     <div class="p-content p-maxwidth p-pd">
-      <h1>PTECHDEV's Github</h1>
+      <h1>PTechDev's Github</h1>
       <h2>How to make a Github website like this?</h2>
     </div>
   </header><!-- close p-header -->
 
 
-  <div class="p-title">
+  <div class="p-title p-bgcolor1">
     <div class="p-content p-maxwidth p-pd">
-      <h3>It is a single column, responsive website.</h3>
+      <span>single column</span><span>responsive website</span><span>font awesome</span><span>embed google map</span><span>sticky top menu</span>
     </div>
   </div><!-- close p-title -->
 
-  <article class="p-content p-maxwidth p-pd">    
-    <p>It consists of nav menu, header, article/content and footer</p>
-    <section>    
-      <h4>1) The first part is the nav menu and full-width header.</h4>
+  <ul class="p-innermenu">
+    <li  data-menu="html">HTML<i class="fab fa-html5"></i></li>
+    <li data-menu="css">CSS<i class="fab fa-css3"></i></li>
+    <li  data-menu="js">JS<i class="fab fa-js"></i></li>
+  </ul>
+  
+
+  <article id="html" class="p-article p-content p-maxwidth p-pd" style="">
+    <h2>HTML</h2>
+    <p>It separated to head, navigation menu, header title, tags, article and footer 6 main parts. </p>
+    <section>
+      <h3>Head</h3>
+      <li>The head area embeded the font awesome 5 icons and google fonts.</li><li>The google font 'Newsreader' for the title and 'Roboto' for the paragraphs.</li>
+      <pre><code>&lt!DOCTYPE html&gt
+  &lthtml&gt
+  &lttitle&gtHTML NAV&lt/title&gt  
+  &lthead&gt
+    &ltlink rel="stylesheet" href="assets/stylecss.css"&gt
+    &ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt
+    &ltlink rel="preconnect" href="https://fonts.gstatic.com"&gt
+    &ltlink href="https://fonts.googleapis.com/css2?family=Newsreader&family=Roboto&display=swap" rel="stylesheet"&gt
+    &ltscript src="https://code.jquery.com/jquery-3.3.1.js"&gt&lt/script&gt
+  &lt/head&gt        
+  &ltbody&gt</code></pre>
+
+    </section>
+
+    <section>
+      <h3>Nav Menu and Header</h3>
+      <li>The horizontal menu is floating to the right @media size larger than 601px.</li>
+      <li>The horizontal menu spread equally to 3 parts when @media size less than 600px.</li>
       <pre><code>&ltheader class="p-header"&gt      
   &ltdiv class="p-content p-maxwidth"&gt      
     &ltul class="p-topnav"&gt
@@ -50,12 +84,12 @@
     &lth1&gtPTECHDEV's Github&lt/h1&gt
     &lth2&gtHow to make a Github website like this?&lt/h2&gt
   &lt/div&gt
-&lt/header&gt&lt!-- close p-header --&gt
-      </code></pre>
+&lt/header&gt&lt!-- close p-header --&gt</code></pre>
     </section>
-   
-    <section>    
-      <h4>2) The second part is the title.</h4>
+
+    <section>
+      <h3>Title</h3>
+      <li>It displays all the related tags of this articles.</li>
       <pre><code>&ltdiv class="p-title"&gt
   &ltdiv class="p-content p-maxwidth p-pd"&gt
     &lth3&gtIt is a single column, responsive website.&lt/h3&gt
@@ -63,39 +97,228 @@
 &lt/div&gt&lt!-- close p-title --&gt</code></pre>
 
     </section>
-    <section>    
-      <h4>3) The third part is the article/content.</h4>
-    </section>   
-    <section>    
-      <h4>3) The last part is the footer.</h4>
-      <pre><code>&ltfooter&gt
-&ltdiv class="p-footer"&gt      
-  &ltdiv class="p-content p-maxwidth p-pd"&gt
-    &ltul class="p-bottomnav"&gt
-      &ltli&gt&lta class="p-active" href="http://ptechdev.github.io"&gtmain&lt/a&gt&lt/li&gt
-        &ltli&gt&lta href="https://github.com/ptechdev/ptechdev.github.io"&gtdownload&lt/a&gt&lt/li&gt
-        &ltli&gt&lta href="http://ptechdev.github.io/contact.html"&gtcontact&lt/a&gt&lt/li&gt    
-        &ltli&gt&lta href=""&gt&copy; PTechDev 2018-2021&lt/a&gt&lt/li&gt          
+    <section>
+      <h3>Article/content</h3>
+      <pre><code>&ltarticle&gt
+  &ltsection&gt
+    &lth3&gtThis is the section title&lt/h3&gt
+    &ltpre&gt&ltcode&gt&lt/code&gt&lt/pre&gt
+  &lt/section&gt
+  &ltsection&gt
+    &lth3&gtThis is the another section title&lt/h3&gt
+    &ltpre&gt&ltcode&gt&lt/code&gt&lt/pre&gt
+  &lt/section&gt
+&lt/article&gt&lt!-- close article --&gt</code></pre>
+    </section>
+    <section>
+      <h3>Footer</h3>
+      <pre><code>&ltfooter&gt&lt/footer&gt
+  &ltdiv class="p-footer p-bgcolor1"&gt
+    &ltdiv class="p-content p-maxwidth p-pd"&gt
+      &ltul class="p-bottomnav"&gt
+        &ltli&gt&lta class="p-active p-bgcolor1" href="http://ptechdev.github.io"&gtmain&lt/a&gt&lt/li&gt
+        &ltli&gt&lta class="p-bgcolor1" href="https://github.com/ptechdev/ptechdev.github.io"&gtdownload&lt/a&gt&lt/li&gt
+        &ltli&gt&lta class="p-bgcolor1" href="http://ptechdev.github.io/contact.html"&gtcontact&lt/a&gt&lt/li&gt
+        &ltli&gt&lta class="p-bgcolor1" href=""&gt&copy; PTechDev 2018-2021&lt/a&gt&lt/li&gt
       &lt/ul&gt
     &lt/div&gt
   &lt/div&gt
-&lt/footer&gt&lt!-- close footer --&gt</code></pre>
-    </section>   
+&lt/footer&gt&lt!-- close footer --&gt
+  
+&ltscript src="assets/scriptjs.js"&gt&lt/script&gt
+&lt/body&gt  
+&lt/html&gt</code></pre>
+    </section>
   </article><!-- close article -->
 
-  <footer>
-    <div class="p-footer">      
+  <article id="css" class="p-article p-content p-maxwidth p-pd">
+    <h2>CSS</h2>
+    <section>
+      <h3>stylecss.css</h3>
+      <pre><code>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Newsreader', serif;
+        }
+        
+        p,span,a,li {
+          font-family: 'Roboto';
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        a {
+          color: #333
+        }
+        
+        .p-content {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        
+        .p-maxwidth {
+          max-width: 1000px;
+        }
+        
+        .p-pd {
+          padding: 16px;
+        }
+        
+        section {
+          padding: 16px;
+          background: #eee
+        }
+        
+        section:not(:last-child) {
+          margin-bottom: 16px;
+        }
+        
+        .p-header {
+          background-position: center;
+          background-image: url(/assets/img/webpic28.png);
+          background-size: cover;
+          color: #333;
+        }
+        
+        .p-bgcolor1, .p-topnav li a.p-active.p-bgcolor2 {
+          background-color: #6b5b95;
+          color: white
+        }
+        
+        .p-bgcolor2, .p-bottomnav li a.p-active.p-bgcolor1 {
+          background-color: #d64161;
+          color: white
+        }
+        
+        .p-topnav li a:hover:not(.p-active), .p-bottomnav li a:hover:not(.p-active), .p-bgcolor3 {
+          background-color: #f7cac9;
+        }
+        
+        section h3 {
+          border-color: #d64161
+        }
+        
+        .p-topnav , .p-bottomnav, .p-innermenu {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+        
+        .p-topnav li a, .p-bottomnav li a, .p-innermenu li a {
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+        
+        .p-innermenu li {
+          width: 33.3333%;
+          background-color: #eee;
+          float: left;
+          text-align: center
+        }
+        
+        .p-innermenu li:not(:last-child) {
+          border-right: 1px solid #ccc;
+        }
+        
+        .p-innermenu li a {
+          padding: 8px;
+        }
+        
+        .p-innermenu li a:hover {
+          background-color: #ccc;
+        }
+        
+        .p-topnav li {
+          float: right;
+        }
+        
+        .p-topnav li a {
+          padding: 16px;
+          font-size: 14px
+        }
+        
+        @media(max-width: 600px) {
+          .p-topnav li {
+              width:33.33%
+          }
+        }
+        
+        .p-bottomnav li {
+          float: left
+        }
+        
+        .p-bottomnav li:last-child {
+          float: right;
+        }
+        
+        .p-bottomnav li a {
+          padding: 5px 10px;
+          font-size: 12px;
+        }
+        
+        .p-bottomnav li:last-child a:hover {
+          background: none;
+          cursor: default
+        }
+        
+        section h3 {
+          border-left-width: 5px;
+          border-left-style: solid;
+          padding: 5px 10px;
+          text-transform: capitalize;
+        }
+        
+        pre {
+          margin: 0;
+          padding: 0;
+        }
+        
+        code {
+          font-family: monospace;
+          font-size: 12px;
+          background: white;
+          color: #333;
+          padding: 16px;
+          display: inline-block;
+          line-height: 1.6;
+          margin: 0;
+          width: 100%;
+          overflow-x: scroll;
+        }
+        
+      </code></pre>
+    </section>
+  </article>
+
+  <article id="js" class="p-article p-content p-maxwidth p-pd">
+    <h2>JS</h2>
+    <section>
+      <h3>scriptsjs.js</h3>
+      <pre><code></code>
+        </pre>
+        </section>
+        </article>
+
+
+  <footer></footer>
+    <div class="p-footer p-bgcolor1">
       <div class="p-content p-maxwidth p-pd">
         <ul class="p-bottomnav">
-          <li><a class="p-active" href="http://ptechdev.github.io">main</a></li>
-          <li><a href="https://github.com/ptechdev/ptechdev.github.io">download</a></li>
-          <li><a href="http://ptechdev.github.io/contact.html">contact</a></li>    
-          <li><a href="">&copy; PTechDev 2018-2021</a></li>          
+          <li><a class="p-active p-bgcolor1" href="http://ptechdev.github.io">main</a></li>
+          <li><a class="p-bgcolor1" href="https://github.com/ptechdev/ptechdev.github.io">download</a></li>
+          <li><a class="p-bgcolor1" href="http://ptechdev.github.io/contact.html">contact</a></li>
+          <li><a class="p-bgcolor1" href="">&copy; PTechDev 2018-2021</a></li>
         </ul>
       </div>
     </div>
   </footer><!-- close footer -->
 
-<script src="assets/scriptjs.js"></script>
+  <script src="assets/scriptjs.js"></script>
 </body>
+
 </html>

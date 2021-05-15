@@ -1,36 +1,185 @@
-body { margin:0; padding:0; font-family: 'Newsreader', serif; }
-p,span,a,li { font-family: 'Roboto';}
-* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Newsreader', serif;
+}
+h1,h2,h3 { letter-spacing:1px;}
+p,span,a,li {
+  font-family: 'Roboto';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #333
+}
+
+section li { margin-bottom:12px;}
+
+nav{ position:sticky; top:0;background-color:white;
+
+}
+i {
+  margin-left:5px; font-size:20px;
+}
+.p-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-maxwidth {
+  max-width: 1200px;
+}
+
+article {
+  margin-top:16px; margin-bottom:16px; min-height:500px;
+}
 
 
-.p-content { margin-left:auto; margin-right:auto;}
-.p-maxwidth { max-width: 1000px;}
-.p-pd { padding: 16px;}
-section { padding:16px; margin-bottom:16px; background:#eee}
+.p-pd {
+  padding: 16px;
+}
 
-.p-header { background-position:center;background-image:url(/assets/img/webpic28.png);background-size:cover;color:#333; }
-.p-footer { background-color:#b1cbbb; color:white; }
+section {
+  padding: 16px;
+  background: #eee;
+  border-radius:5px;
+}
 
+section:not(:last-child) {
+  margin-bottom: 16px;
+}
 
-.p-topnav , .p-bottomnav  {  list-style-type: none;  margin: 0;  padding: 0; overflow: hidden;  }
-.p-topnav li a, .p-bottomnav  li a{ display: block;  color: white;  text-decoration: none;  text-transform: uppercase;}
-.p-topnav li a:hover:not(.p-active), .p-bottomnav li a:hover:not(.p-active) { background-color: #f7cac9;}
+.p-header {
+  background-position: center;
+  background-image: url(/assets/img/webpic28.png);
+  background-size: cover;
+  color: #333;
+}
 
-.p-topnav li { float:right; }
-.p-topnav li a{  padding: 16px;   background-color: #f7786b; font-size:14px}
-@media(max-width:600px){.p-topnav li {width:33.33%}}
-.p-topnav li a.p-active{ background-color: #b1cbbb;}
+.p-title span{
+ border:1px solid #333;margin-right:5px;padding:5px;border-radius:5px;background-color:#333; font-size:12px
+}
 
-.p-bottomnav li{ float:left}
-.p-bottomnav li:last-child { float:right; }
-.p-bottomnav li a{ padding:5px 10px; background-color:#b1cbbb; font-size:12px;}
-.p-bottomnav li a.p-active{ background-color:#f7786b;}
-.p-bottomnav li:last-child a:hover{ background:none;cursor:default}
+.p-bgcolor1{
+  background-color: #6b5b95;
+  color: white
+}
 
+.p-topnav li a.p-active {
+  font-weight: 700;
+}
 
-.p-title { background-color:#b1cbbb;padding:0px 0px;color:white; }
+.p-bgcolor2, .p-bottomnav li a.p-active.p-bgcolor1 {
+  background-color: #d64161;
+  color: white
+}
+i { color: #d64161; }
+.p-topnav li a:hover:not(.p-active) {
+  font-weight: 700;
+}
 
-pre { margin:0; padding:0;}
-code { font-family: monospace;font-size: 12px; background:#b1cbbb; color:#333;padding: 16px; display: inline-block; line-height: 1.6; margin:0; width: 100%; overflow-x: scroll; }
+.p-bottomnav li a:hover:not(.p-active), .p-bgcolor3 {
+  background-color: #f7cac9;
+}
 
+section h3, .p-innermenu li:not(:last-child) {
+  border-color: #d64161; color:#333;
+}
 
+.p-topnav , .p-bottomnav, .p-innermenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.p-topnav li a, .p-bottomnav li a, .p-innermenu li a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.p-innermenu li {
+  width: 33.3333%;
+  background-color: #eee;
+  float: left;
+  text-align: center;
+  padding:8px;
+  cursor:pointer;
+}
+
+.p-innermenu li:not(:last-child) {
+  border-right-width: 5px; border-right-style: solid;
+}
+
+.p-innermenu li a {
+  padding: 8px;
+}
+
+.p-innermenu li a:hover {
+  background-color: #ccc;
+}
+
+.p-topnav li {
+  float: right;
+}
+
+.p-topnav li a {
+  padding: 16px;
+  font-size: 14px
+}
+
+@media(max-width: 600px) {
+  .p-topnav li {
+      width:33.33%; text-align:center;
+  }
+  .p-topnav li:not(:last-child) {  border-left:2px solid #ccc;}
+    
+}
+
+.p-bottomnav li {
+  float: left
+}
+
+.p-bottomnav li:last-child {
+  float: right;
+}
+
+.p-bottomnav li a {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.p-bottomnav li:last-child a:hover {
+  background: none;
+  cursor: default
+}
+
+section h3 {
+  border-left-width: 5px;
+  border-left-style: solid;
+  padding: 5px 10px;
+  
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: monospace;
+  font-size: 14px;
+  background: #343A40;
+  color:#F28042 ;
+  padding: 16px;
+  display: inline-block;
+  line-height: 1.6;
+  margin: 0;
+  width: 100%;
+  overflow-x: scroll;
+  border-radius:10px;
+}
