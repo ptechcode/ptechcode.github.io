@@ -61,7 +61,7 @@ section:not(:last-child) {
 
 .p-title span{
  border:1px solid #333;margin-right:5px;padding:5px;border-radius:5px;background-color:#333; font-size:12px;
- margin-bottom:10px; overflow-x:scroll; white-space: nowrap;
+ margin-bottom:10px; white-space: nowrap;
 }
 
 .p-bgcolor1{
