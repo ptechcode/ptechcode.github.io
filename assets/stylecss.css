@@ -60,7 +60,8 @@ section:not(:last-child) {
 }
 
 .p-title span{
- border:1px solid #333;margin-right:5px;padding:5px;border-radius:5px;background-color:#333; font-size:12px
+ border:1px solid #333;margin-right:5px;padding:5px;border-radius:5px;background-color:#333; font-size:12px;
+ margin-bottom:10px; overflow-x:scroll; white-space: nowrap;
 }
 
 .p-bgcolor1{
@@ -133,10 +134,12 @@ section h3, .p-innermenu li:not(:last-child) {
 }
 
 @media(max-width: 600px) {
-  .p-topnav li {
-      width:33.33%; text-align:center;
+  .p-topnav li a {
+       text-align:center; padding:8px; 
   }
-  .p-topnav li:not(:last-child) {  border-left:2px solid #ccc;}
+  .p-topnav li {width:33.33%; }
+  
+  .p-topnav li:not(:last-child) {  border-left-width:5px; border-left-style:solid; border-left-color: #d64161  }
     
 }
 
