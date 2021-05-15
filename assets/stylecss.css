@@ -18,7 +18,7 @@ a {
 
 section li { margin-bottom:12px;}
 
-nav{ position:sticky; top:0;background-color:white;
+nav{ position:fixed; top:0;left:0;right:0;height:40px;background-color:white;
 
 }
 i {
@@ -57,6 +57,7 @@ section:not(:last-child) {
   background-image: url(/assets/img/webpic28.png);
   background-size: cover;
   color: #333;
+  margin-top:40px;
 }
 
 .p-title span{
@@ -113,6 +114,7 @@ section h3, .p-innermenu li:not(:last-child) {
   text-transform: uppercase;
 }
 
+.p-innermenu { position:sticky; top:40px;}
 .p-innermenu li {
   width: 33.3333%;
   background-color: #eee;
@@ -145,7 +147,7 @@ section h3, .p-innermenu li:not(:last-child) {
 
 @media(max-width: 600px) {
   .p-topnav li a {
-       text-align:center; padding:8px; 
+       text-align:center; padding:12px; 
   }
   .p-topnav li {width:33.33%; }
   
