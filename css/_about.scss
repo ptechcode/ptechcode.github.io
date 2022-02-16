@@ -1,0 +1,162 @@
+#about-a {
+  text-align: center;
+  padding: 3rem 0;
+  
+  .about-info {
+    padding: 3rem 0;
+    display: grid;
+   
+    grid-template-areas:
+      'bioimage bio bio'
+      'aw1 aw2 aw3';
+    gap: 1.2rem;
+    img { 
+      border-radius: 50%; 
+      width: 200px; 
+      height: 200px;
+      object-fit: cover;
+      margin:0 auto; 
+    }
+
+    @media(max-width: $phone-width){
+      & {
+        grid-template-areas:"bioimage bio aw1 aw2 aw3";
+      }
+    }
+  }
+
+  // Grid Area
+  .bio-image {
+    grid-area: bioimage;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ //   max-height:250px;
+  // object-fit: cover;
+  }
+
+  .bio {
+    grid-area: bio;
+    border-left: 3px solid $primary-color;
+    padding: 0.8rem;
+    background:$background-solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .award-1 {
+    grid-area: aw1;
+  }
+
+  .award-2 {
+    grid-area: aw2;
+  }
+
+  .award-3 {
+    grid-area: aw3;
+  }
+
+  .award-1 .fas,
+  .award-2 .fas,
+  .award-3 .fas {
+    color: $primary-color;
+    margin: 1rem;
+  }
+}
+
+#about-b {
+  background: $on-background-alt;
+  //color: $background-solid;
+  padding: 3rem 0;
+  .progress {
+    overflow: hidden;
+    height: 20px;
+    background: $background-solid;
+    border-radius: 5px;
+    margin-bottom: 0.6rem;    
+
+    div {
+      height: 100%;
+      text-align: center;     
+    }
+    &.ani.show>div>div {
+        animation:aniwidth 5s forwards;
+        @keyframes aniwidth {
+          from {
+            width:0px; 
+          }
+          to {
+            width: 100%;
+          }
+        }
+      background: $primary-color;
+      }
+    }
+  
+}
+
+#about-c {
+  background: $background-solid;
+  padding: 3.5rem 0;
+  .about-logos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      margin:0 auto;
+      filter: grayscale(100%);    
+    }
+  }
+  @media(max-width:$phone-width){
+    i {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+#about-d {
+ padding: 4rem 0;
+ p.md {
+   text-align: center;
+ }
+ .testimonials {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 1rem;
+   padding: 2rem 0;
+
+   p {
+     border: 1px solid $on-background-alt;
+     border-radius: 5px;
+     padding: 1rem;
+   }
+   ul {
+     margin-top: 1rem;
+     display: grid;
+     grid-template-columns: 60px 1fr;
+     justify-content: space-between;
+     align-items: center;
+     li img {
+       width:50px;
+       height:50px;
+       border-radius: 50%;
+     }
+   }
+   @media(max-width:$tablet-width){
+     & {
+       grid-template-columns: repeat(2, 1fr);
+     }
+   }
+   @media(max-width:$phone-width){
+    & {
+      grid-template-columns: 1fr;
+    }
+  }
+ }
+
+
+}

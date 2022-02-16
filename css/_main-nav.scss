@@ -1,0 +1,49 @@
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+    font-family: $font-nav;
+  }
+
+  ul ul {
+    display: none;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $primary-variant;
+    }
+
+    &.current {
+      border-color: $primary-color;
+    }
+  }
+  @media(max-width: $tablet-width){
+  &{
+    flex-wrap: wrap;
+    h1 {
+      width:100%;
+      text-align: center;
+    }
+    ul {
+      margin: 0 auto;     
+    }
+
+  }
+   
+  }
+
+}

@@ -1,0 +1,18 @@
+
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase; 
+  position: relative;
+  margin-bottom: 2rem;
+}
+.section-title:after{
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height:2px;  
+  background: $primary-color;
+}

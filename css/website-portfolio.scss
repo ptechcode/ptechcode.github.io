@@ -1,0 +1,28 @@
+@import '../../../scss/config';
+
+$image-path: "https://source.unsplash.com/random/?water";
+$border-radius: 0px;
+
+body { 
+  font-size:105%; 
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+}
+
+
+
+$font-nav: $font-heading;
+@import '../../../scss/configinc';
+
+@import 'main-nav';
+@import '../../../parts/footer/footer-portfolio';
+
+@import './utilities';
+@import 'mainpage';
+@import 'about';
+@import 'work';
+@import 'contact';
+
+
+
